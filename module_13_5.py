@@ -49,7 +49,7 @@ async def send_calories(message, state):
 
 @dp.message_handler(commands=['start'])
 async def start(message):
-    await message.answer('Привет! Я бот, помогающий твоему здоровью.', reply_murkup = kb)
+    await message.answer('Привет! Я бот, помогающий твоему здоровью.', reply_markup = kb)
 
 @dp.message_handler()
 async def all_massages(message):
